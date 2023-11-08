@@ -8,7 +8,7 @@ html {
 
 @layer {
     body {
-        @apply overflow-x-hidden bg-dark font-geomanist
+        @apply overflow-x-hidden bg-dark font-geomanist text-white
     }
 }
 h2 {
