@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply scroll-smooth
+}
+
+@layer {
+    body {
+        @apply overflow-x-hidden bg-dark font-geomanist
+    }
+}
+h2 {
+    @apply text-center md:text-left text-2xl md:text-4xl lg:text-5xl xl:text-body xl:leading-20
+}
+.text-size {
+    @apply text-lg md:text-2xl lg:text-display lg:leading-10
+}
+
+/* before and after */
+.border-rounded::after,
+.border-rounded::before {
+    content: '';
+    @apply  absolute h-1 md:h-full w-full md:w-2 rounded-full bg-gradient-to-t to-brand-red-300 from-brand-red-600
+}
+.border-rounded::after {
+    @apply  left-0 top-0
+}
+.border-rounded::before {
+    @apply  right-0 bottom-0 md:top-0
+}
+.card::after {
+    content: '';
+    @apply w-full h-1 absolute top-0 left-0  rounded-full bg-gradient-to-t to-brand-red-300 from-brand-red-600
+}
