@@ -11,7 +11,7 @@ html {
         @apply overflow-x-hidden bg-dark font-geomanist text-white
     }
 }
-h2 {
+h3 {
     @apply text-center md:text-left text-2xl md:text-4xl lg:text-5xl xl:text-body xl:leading-20
 }
 .text-size {
