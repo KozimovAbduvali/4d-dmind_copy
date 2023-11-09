@@ -1400,6 +1400,10 @@ h3 {
     height: 20rem;
   }
 
+  .lg\:h-44 {
+    height: 11rem;
+  }
+
   .lg\:w-3\/5 {
     width: 60%;
   }
