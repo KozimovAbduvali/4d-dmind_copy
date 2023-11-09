@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'geomanist': 'geomanistregular',
+        'geomanist': '.',
       },
       fontSize: {
         'display-3xl': '2rem',
