@@ -518,6 +518,15 @@ video {
 .bottom-10 {
   bottom: 2.5rem;
 }
+.right-16 {
+  right: 4rem;
+}
+.right-20 {
+  right: 5rem;
+}
+.right-28 {
+  right: 7rem;
+}
 .z-0 {
   z-index: 0;
 }
@@ -635,6 +644,10 @@ video {
 }
 .h-full {
   height: 100%;
+}
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
 }
 .w-3\/4 {
   width: 75%;
@@ -1528,6 +1541,10 @@ h3 {
     height: 24rem;
   }
 
+  .xl\:h-12 {
+    height: 3rem;
+  }
+
   .xl\:w-1\/2 {
     width: 50%;
   }
@@ -1620,6 +1637,11 @@ h3 {
     line-height: 1.75rem;
   }
 
+  .xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .xl\:leading-12 {
     line-height: 48px;
   }
@@ -1634,8 +1656,16 @@ h3 {
 }
 @media (min-width: 1440px) {
 
+  .xxl\:right-0 {
+    right: 0px;
+  }
+
   .xxl\:h-80 {
     height: 20rem;
+  }
+
+  .xxl\:p-9 {
+    padding: 2.25rem;
   }
 
   .xxl\:text-2xl {
@@ -1663,5 +1693,9 @@ h3 {
 
   .xxl\:leading-\[115px\] {
     line-height: 115px;
+  }
+
+  .xxl\:leading-\[124px\] {
+    line-height: 124px;
   }
 }
