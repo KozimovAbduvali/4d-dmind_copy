@@ -17,7 +17,9 @@ h3 {
 .text-size {
     @apply text-lg md:text-2xl lg:text-display lg:leading-10
 }
-
+.text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-brand-pink-500 to-brand-red-600
+}
 /* before and after */
 .border-rounded::after,
 .border-rounded::before {

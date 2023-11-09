@@ -622,11 +622,11 @@ video {
 .max-w-\[57rem\] {
   max-width: 57rem;
 }
-.max-w-base {
-  max-width: 97.5rem;
-}
 .max-w-\[610px\] {
   max-width: 610px;
+}
+.max-w-base {
+  max-width: 97.5rem;
 }
 .border-collapse {
   border-collapse: collapse;
@@ -634,6 +634,9 @@ video {
 .-translate-x-full {
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -661,6 +664,12 @@ video {
 }
 .gap-8 {
   gap: 2rem;
+}
+.gap-52 {
+  gap: 13rem;
+}
+.gap-11 {
+  gap: 2.75rem;
 }
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -740,6 +749,9 @@ video {
 .pb-4 {
   padding-bottom: 1rem;
 }
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -783,9 +795,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-display {
-  font-size: 2rem;
 }
 .font-bold {
   font-weight: 700;
@@ -879,7 +888,16 @@ h3 {
     line-height: 2.5rem;
   }
 }
-
+.text-gradient {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #FA1A7C var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(250 26 124 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #F44 var(--tw-gradient-to-position);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
 /* before and after */
 .border-rounded::after,
 .border-rounded::before {
@@ -997,6 +1015,10 @@ h3 {
     margin-top: 1rem;
   }
 
+  .md\:mt-24 {
+    margin-top: 6rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1037,6 +1059,10 @@ h3 {
     width: auto;
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1047,6 +1073,10 @@ h3 {
 
   .md\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
   }
 
   .md\:px-20 {
@@ -1106,13 +1136,13 @@ h3 {
     line-height: 1.5rem;
   }
 
+  .md\:text-display {
+    font-size: 2rem;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-display {
-    font-size: 2rem;
   }
 
   .md\:leading-10 {
@@ -1123,6 +1153,10 @@ h3 {
 
   .lg\:absolute {
     position: absolute;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
   }
 
   .lg\:mt-28 {
@@ -1141,12 +1175,12 @@ h3 {
     margin-top: 10rem;
   }
 
-  .lg\:mt-24 {
-    margin-top: 6rem;
+  .lg\:mt-52 {
+    margin-top: 13rem;
   }
 
-  .lg\:mt-20 {
-    margin-top: 5rem;
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {
@@ -1177,6 +1211,10 @@ h3 {
     gap: 5rem;
   }
 
+  .lg\:gap-11 {
+    gap: 2.75rem;
+  }
+
   .lg\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
@@ -1202,6 +1240,11 @@ h3 {
     padding-top: 16rem;
   }
 
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
@@ -1210,11 +1253,6 @@ h3 {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 @media (min-width: 1280px) {
@@ -1279,5 +1317,9 @@ h3 {
 
   .xl\:leading-\[124px\] {
     line-height: 124px;
+  }
+
+  .xl\:leading-\[115px\] {
+    line-height: 115px;
   }
 }
