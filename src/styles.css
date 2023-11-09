@@ -18,7 +18,7 @@ h3 {
     @apply text-lg md:text-2xl lg:text-display lg:leading-10
 }
 .text-gradient {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-brand-pink-500 to-brand-red-600
+    @apply text-transparent bg-clip-text bg-gradient-to-l from-brand-pink-500 to-brand-red-600
 }
 /* before and after */
 .border-rounded::after,
@@ -39,4 +39,9 @@ h3 {
 .card-bottom::after {
     content: '';
     @apply w-full h-1 md:h-2 absolute bottom-0 left-0  rounded-full bg-gradient-to-t to-brand-pink-500 from-brand-red-600
+}
+.card-top::after {
+    content: '';
+    @apply w-1/4 h-1 absolute top-0 left-5 md:left-10  rounded-full bg-gradient-to-t to-brand-pink-500 from-brand-red-600
+    
 }

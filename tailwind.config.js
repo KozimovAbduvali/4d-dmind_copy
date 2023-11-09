@@ -8,6 +8,7 @@ module.exports = {
       },
       fontSize: {
         'display': '2rem',
+        'forty': '2.5rem',
         'body': '4rem'
       },
       maxWidth: {
@@ -25,6 +26,7 @@ module.exports = {
         },
       },
       lineHeight: {
+        '12': '48px',
         '20': '76px'
       }
     },
