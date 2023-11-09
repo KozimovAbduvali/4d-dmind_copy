@@ -515,6 +515,9 @@ video {
 .top-\[620px\] {
   top: 620px;
 }
+.bottom-10 {
+  bottom: 2.5rem;
+}
 .z-0 {
   z-index: 0;
 }
@@ -526,6 +529,9 @@ video {
 }
 .z-40 {
   z-index: 40;
+}
+.z-30 {
+  z-index: 30;
 }
 .mx-auto {
   margin-left: auto;
@@ -654,6 +660,9 @@ video {
 }
 .max-w-base {
   max-width: 97.5rem;
+}
+.max-w-\[140px\] {
+  max-width: 140px;
 }
 .border-collapse {
   border-collapse: collapse;
@@ -1092,6 +1101,10 @@ h3 {
   }
 }
 @media (min-width: 768px) {
+
+  .md\:right-20 {
+    right: 5rem;
+  }
 
   .md\:mt-10 {
     margin-top: 2.5rem;
