@@ -7,9 +7,9 @@ module.exports = {
         'geomanist': 'geomanistregular',
       },
       fontSize: {
-        'display': '2rem',
-        'forty': '2.5rem',
-        'body': '4rem'
+        'display-3xl': '2rem',
+        'display-4xl': '2.5rem',
+        'display-6xl': '4rem',
       },
       maxWidth: {
         'base': '97.5rem'
@@ -29,6 +29,13 @@ module.exports = {
         '12': '48px',
         '20': '76px'
       }
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      'xxl': '1440px'
     },
   },
   plugins: [],
