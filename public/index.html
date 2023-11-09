@@ -53,7 +53,7 @@
                 Let us take <span class="font-bold xl:text-[136px] text-gradient">care</span><br>
                 of your Statamic website
             </h1>
-            <div class="w-3/4 h-full lg:w-auto lg:absolute right-0 top-0 z-0 mx-auto mt-10 lg:mt-0">
+            <div class="hidden lg:block w-3/4 h-full lg:w-auto lg:absolute right-0 top-0 z-0 mx-auto mt-10 lg:mt-0">
                 <img src="./img/free_consultation.svg" alt="" class="h-44 lg:h-60 xxl:h-80">
             </div>
             <div class="relative z-10 grid sm:grid-cols-2 xl:grid-cols-3 gap-8 mt-8 md:mt-20 lg:mt-32">
@@ -343,13 +343,6 @@
                             successfully powered by Statamic CMS
                         </p>
                     </div>
-                </div>
-                <div class="fixed bottom-10 right-5 md:right-20 z-30 max-w-[140px]">
-                    <button
-                        class="flex flex-col items-center gap-2 bg-gradient-to-r to-brand-pink-500 from-brand-red-600 hover:bg-gradient-to-l transition duration-300 rounded-lg lg:rounded-[28px] p-2 xl:p-4">
-                        <img src="./img/free_consultation_in.svg" class="h-8 lg:h-14">
-                        <p class="font-bold text-xs md:text-base">Free consultation</p>
-                    </button>
                 </div>
             </div>
         </section>
@@ -706,7 +699,15 @@
                 </p>
             </div>
         </section>
+        <div class="fixed bottom-10 right-5 md:right-20 z-30 max-w-[140px]">
+            <button
+                class="flex flex-col items-center gap-2 bg-gradient-to-r to-brand-pink-500 from-brand-red-600 hover:bg-gradient-to-l transition duration-300 rounded-lg lg:rounded-[28px] p-2 xl:p-4">
+                <img src="./img/free_consultation_in.svg" class="h-8 lg:h-14">
+                <p class="font-bold text-xs md:text-base">Free consultation</p>
+            </button>
+        </div>
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script>
