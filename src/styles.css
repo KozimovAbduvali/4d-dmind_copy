@@ -34,3 +34,7 @@ h3 {
     content: '';
     @apply w-full h-1 absolute top-0 left-0  rounded-full bg-gradient-to-t to-brand-pink-500 from-brand-red-600
 }
+.card-bottom::after {
+    content: '';
+    @apply w-full h-1 md:h-2 absolute bottom-0 left-0  rounded-full bg-gradient-to-t to-brand-pink-500 from-brand-red-600
+}

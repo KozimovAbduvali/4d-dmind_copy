@@ -22,7 +22,7 @@ module.exports = {
           red: {
             600: '#F44'
           }
-        }
+        },
       },
       lineHeight: {
         '20': '76px'
