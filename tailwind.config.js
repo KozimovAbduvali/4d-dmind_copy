@@ -16,8 +16,10 @@ module.exports = {
       colors: {
         dark: '#1A1820',
         brand: {
+          pink: {
+            500: '#FA1A7C',
+          },
           red: {
-            300: '#FA1A7C',
             600: '#F44'
           }
         }
