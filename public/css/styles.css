@@ -641,6 +641,9 @@ video {
 .h-6 {
   height: 1.5rem;
 }
+.h-60 {
+  height: 15rem;
+}
 .h-8 {
   height: 2rem;
 }
@@ -650,9 +653,6 @@ video {
 .h-max {
   height: -moz-max-content;
   height: max-content;
-}
-.h-60 {
-  height: 15rem;
 }
 .w-3\/4 {
   width: 75%;
@@ -688,17 +688,17 @@ video {
 .max-w-\[610px\] {
   max-width: 610px;
 }
-.max-w-\[70px\] {
-  max-width: 70px;
-}
-.max-w-base {
-  max-width: 97.5rem;
-}
 .max-w-\[690px\] {
   max-width: 690px;
 }
 .max-w-\[702px\] {
   max-width: 702px;
+}
+.max-w-\[70px\] {
+  max-width: 70px;
+}
+.max-w-base {
+  max-width: 97.5rem;
 }
 .border-collapse {
   border-collapse: collapse;
@@ -755,11 +755,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-.space-y-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -917,6 +912,10 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -932,10 +931,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 .font-bold {
   font-weight: 700;
@@ -978,8 +973,13 @@ video {
 }
 h3 {
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 2rem;
+}
+@media (min-width: 640px) {
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 @media (min-width: 768px) {
 
@@ -1624,6 +1624,10 @@ h3 {
     grid-column: span 3 / span 3;
   }
 
+  .xl\:ml-auto {
+    margin-left: auto;
+  }
+
   .xl\:mt-14 {
     margin-top: 3.5rem;
   }
@@ -1632,16 +1636,8 @@ h3 {
     margin-top: 4rem;
   }
 
-  .xl\:mt-60 {
-    margin-top: 15rem;
-  }
-
   .xl\:mt-56 {
     margin-top: 14rem;
-  }
-
-  .xl\:ml-auto {
-    margin-left: auto;
   }
 
   .xl\:block {
@@ -1743,10 +1739,6 @@ h3 {
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .xl\:text-\[40px\] {
-    font-size: 40px;
   }
 
   .xl\:leading-12 {
