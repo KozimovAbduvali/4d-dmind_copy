@@ -520,6 +520,9 @@ video {
 .top-0 {
   top: 0px;
 }
+.right-4 {
+  right: 1rem;
+}
 .z-0 {
   z-index: 0;
 }
@@ -580,6 +583,9 @@ video {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.\!mt-8 {
+  margin-top: 2rem !important;
 }
 .line-clamp-1 {
   overflow: hidden;
@@ -721,6 +727,9 @@ video {
 }
 .items-center {
   align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
@@ -865,6 +874,10 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -900,6 +913,9 @@ video {
 }
 .text-left {
   text-align: left;
+}
+.\!text-left {
+  text-align: left !important;
 }
 .text-center {
   text-align: center;
@@ -970,19 +986,19 @@ video {
 }
 .duration-300 {
   transition-duration: 300ms;
-}
+} 
 h3 {
   text-align: center;
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
+} 
 @media (min-width: 640px) {
 
   h3 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-}
+} 
 @media (min-width: 768px) {
 
   h3 {
@@ -990,14 +1006,14 @@ h3 {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
-}
+} 
 @media (min-width: 1280px) {
 
   h3 {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
-}
+} 
 @media (min-width: 1440px) {
 
   h3 {
@@ -1160,8 +1176,16 @@ h3 {
 }
 @media (min-width: 640px) {
 
+  .sm\:w-auto {
+    width: auto;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:items-center {
+    align-items: center;
   }
 }
 @media (min-width: 768px) {
@@ -1260,6 +1284,10 @@ h3 {
 
   .md\:h-80 {
     height: 20rem;
+  }
+
+  .md\:\!h-56 {
+    height: 14rem !important;
   }
 
   .md\:w-3\/5 {
@@ -1504,6 +1532,14 @@ h3 {
     height: 24rem;
   }
 
+  .lg\:\!h-60 {
+    height: 15rem !important;
+  }
+
+  .lg\:h-10 {
+    height: 2.5rem;
+  }
+
   .lg\:w-3\/5 {
     width: 60%;
   }
@@ -1658,6 +1694,10 @@ h3 {
     height: 461px;
   }
 
+  .xl\:h-60 {
+    height: 15rem;
+  }
+
   .xl\:w-1\/2 {
     width: 50%;
   }
@@ -1757,12 +1797,24 @@ h3 {
     right: 0px;
   }
 
+  .xxl\:mt-64 {
+    margin-top: 16rem;
+  }
+
   .xxl\:block {
     display: block;
   }
 
   .xxl\:h-80 {
     height: 20rem;
+  }
+
+  .xxl\:\!h-72 {
+    height: 18rem !important;
+  }
+
+  .xxl\:h-12 {
+    height: 3rem;
   }
 
   .xxl\:p-9 {
@@ -1794,6 +1846,10 @@ h3 {
   .xxl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xxl\:text-\[136px\] {
+    font-size: 136px;
   }
 
   .xxl\:leading-\[115px\] {
