@@ -218,29 +218,45 @@
         <section class="pb-16 md:pb-20 lg:pb-40 mt-8 md:mt-16 lg:mt-28">
             <div class="swiper mySwiperhero">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide bg-white !h-52 md:!h-56 lg:!h-60 xxl:!h-72 rounded">
-
+                    <div class="swiper-slide">
+                        <div class="bg-white h-52 md:h-60 lg:h-72 rounded-md">
+                        </div>
                     </div>
-                    <div class="swiper-slide bg-white !h-52 md:!h-56 lg:!h-60 xxl:!h-72 rounded">
-
+                    <div class="swiper-slide">
+                        <div class="bg-white h-52 md:h-60 lg:h-72 rounded-md">
+                        </div>
                     </div>
-                    <div class="swiper-slide bg-white !h-52 md:!h-56 lg:!h-60 xxl:!h-72 rounded">
-
+                    <div class="swiper-slide">
+                        <div class="bg-white h-52 md:h-60 lg:h-72 rounded-md">
+                        </div>
                     </div>
-                    <div class="swiper-slide bg-white !h-52 md:!h-56 lg:!h-60 xxl:!h-72 rounded">
-
+                    <div class="swiper-slide">
+                        <div class="bg-white h-52 md:h-60 lg:h-72 rounded-md">
+                        </div>
                     </div>
-                    <div class="swiper-slide bg-white !h-52 md:!h-56 lg:!h-60 xxl:!h-72 rounded">
-
+                    <div class="swiper-slide">
+                        <div class="bg-white h-52 md:h-60 lg:h-72 rounded-md">
+                        </div>
                     </div>
-                    <div class="swiper-slide bg-white !h-52 md:!h-56 lg:!h-60 xxl:!h-72 rounded">
-
+                    <div class="swiper-slide">
+                        <div class="bg-white h-52 md:h-60 lg:h-72 rounded-md">
+                        </div>
                     </div>
-                    <div class="swiper-slide bg-white !h-52 md:!h-56 lg:!h-60 xxl:!h-72 rounded">
-
+                    <div class="swiper-slide">
+                        <div class="bg-white h-52 md:h-60 lg:h-72 rounded-md">
+                        </div>
                     </div>
-                    <div class="swiper-slide bg-white !h-52 md:!h-56 lg:!h-60 xxl:!h-72 rounded">
-
+                    <div class="swiper-slide">
+                        <div class="bg-white h-52 md:h-60 lg:h-72 rounded-md">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-white h-52 md:h-60 lg:h-72 rounded-md">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-white h-52 md:h-60 lg:h-72 rounded-md">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -778,39 +794,25 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script>
-        // 1
         var swiper = new Swiper(".mySwiperhero", {
+            slidesPerView: 1.2,
             centeredSlides: true,
-            centeredSlidesBounds: true,
+            spaceBetween: 20,
+            slidesPerGroup: 1,
+            roundLengths: true,
+            slidesPerGroupAuto: true,
+            loop: true,
             breakpoints: {
-                320: {
-                    slidesPerView: 1.2,
-                    spaceBetween: 12,
-                },
                 640: {
-                    slidesPerView: 2.5,
-                    spaceBetween: 12,
-                },
-                768: {
-                    slidesPerView: 3.7,
-                    spaceBetween: 12,
-                },
-                1024: {
-                    slidesPerView: 4.5,
-                    spaceBetween: 12,
-                },
-                1280: {
-                    slidesPerView: 6,
-                    spaceBetween: 12,
-                },
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
+                    slidesPerView: 'auto',
+                }
             },
             navigation: {
                 nextEl: ".swiper-button-nexthero",
                 prevEl: ".swiper-button-prevhero",
+            },
+            autoplay: {
+                delay: 4000,
             },
         });
     </script>
